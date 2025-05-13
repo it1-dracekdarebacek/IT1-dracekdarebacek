@@ -2,6 +2,8 @@
 
 <html lang="cs">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dráček Darebáček</title>
         <script src="kosicek.js">async</script>
         <style>
@@ -133,26 +135,24 @@
             }
 
             #kontakty{
-                color:aliceblue;
-                font-family:Georgia, Times, 'Times New Roman', serif;
-                text-align:center;
+                color: aliceblue;
+                font-size: 35px;
                 position: relative;
-                top: 82px;
+                top: 145px;
+                left: 890px;
             }
 
             #kontakty:hover{
                 color:black;
-                range:auto
+               
             }
 
-            #text{
-                color:rgb(167, 167, 167)
-            }
+        
 
             .kontakty{
-                background-color:rgb(164, 217, 249);
-                position: relative;
-                height:200px;
+               
+                position:relative;
+                height:350px;
             }
             
             #dum{
@@ -168,6 +168,56 @@
                 left:1720px;
                 bottom:358px;
                 text-decoration:none
+            }
+
+            .produkty {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                padding: 40px;
+                
+            }
+
+            .produkt-box {
+                background-color: white;
+                width: 150px;
+                padding: 20px;
+                border-radius: 15px;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                transition: transform 0.3s ease;
+            }
+
+            .produkt-box:hover {
+                transform: scale(1.05);
+            }
+
+            .produkt-box img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .kosik-btn {
+                margin-top: 15px;
+                padding: 10px 20px;
+                background-color: rgb(125, 194, 228);
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                color: white;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .kosik-btn:hover {
+                background-color: rgb(77, 149, 184);
+            }
+            
+            #text{
+                color: rgb(167, 167, 167);
+                font-family: sans-serif;
+                text-align: center;
             }
         </style>
     </head>
@@ -213,23 +263,151 @@
             <h2 id="novinky">NOVINKY</h2>
         </a>
     </div>
+
+    <h2 id="text">NOVINKY</h2>
+    <div class="produkty">
+        <div class="produkt-box" data-price="149">
+            <img src="obrazky/Shadow.png" alt="Hračka 3">
+            <h3>Ježek Shadow lego klíčenka -149-</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
+        <div class="produkt-box" data-price="699">
+            <img src="obrazky/Mimikyu.jpg" alt="Hračka 4;">    
+            <h3>Pokemon Mimikyu polštář-699-</h3>   
+            <button class="kosik-btn">Do košíku</button>       
+        </div>   
+        <div class="produkt-box" data-price="3495">
+            <img src="obrazky/Lego Ninjago.png" alt="Hračka 5">    
+            <h3>Lego ninjago stavebnice-3495-</h3>   
+            <button class="kosik-btn">Do košíku</button>       
+        </div> 
+    </div>
     
-    <div id="text">
-        <H1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore dolore placeat recusandae ipsa dolorum perferendis esse hic voluptatem? Placeat provident velit voluptate et totam. Molestias eveniet cum ipsam possimus.</H1>
-        <H1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore dolore placeat recusandae ipsa dolorum perferendis esse hic voluptatem? Placeat provident velit voluptate et totam. Molestias eveniet cum ipsam possimus.</H1>
-        <H1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore dolore placeat recusandae ipsa dolorum perferendis esse hic voluptatem? Placeat provident velit voluptate et totam. Molestias eveniet cum ipsam possimus.</H1>
-        <H1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore dolore placeat recusandae ipsa dolorum perferendis esse hic voluptatem? Placeat provident velit voluptate et totam. Molestias eveniet cum ipsam possimus.</H1>
-        <H1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore dolore placeat recusandae ipsa dolorum perferendis esse hic voluptatem? Placeat provident velit voluptate et totam. Molestias eveniet cum ipsam possimus.</H1>
-        <H1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore dolore placeat recusandae ipsa dolorum perferendis esse hic voluptatem? Placeat provident velit voluptate et totam. Molestias eveniet cum ipsam possimus.</H1>
-        <H1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore dolore placeat recusandae ipsa dolorum perferendis esse hic voluptatem? Placeat provident velit voluptate et totam. Molestias eveniet cum ipsam possimus.</H1>
-        <H1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore dolore placeat recusandae ipsa dolorum perferendis esse hic voluptatem? Placeat provident velit voluptate et totam. Molestias eveniet cum ipsam possimus.</H1>
-        <H1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore dolore placeat recusandae ipsa dolorum perferendis esse hic voluptatem? Placeat provident velit voluptate et totam. Molestias eveniet cum ipsam possimus.</H1>
-        <H1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore dolore placeat recusandae ipsa dolorum perferendis esse hic voluptatem? Placeat provident velit voluptate et totam. Molestias eveniet cum ipsam possimus.</H1>
+    <a href="novinky.html">
+        <button style="position:relative; left:890px; font-size:20px">zobrazit více</button>
+    </a>
+
+
+    <h2 id="text">PRO KLUKY</h2>
+    <div class="produkty">
+        <div class="produkt-box" data-price="899">
+            <img src="obrazky/robot.jpg" alt="899;">
+            <h3>ROBOT-899;</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
+        <div class="produkt-box" data-price="1999">
+            <img src="obrazky/nerf.jpg" alt="Hračka 2">
+            <h3>NERF zbraň-1999;</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
+        <div class="produkt-box" data-price="999">
+            <img src="obrazky/auticko.jpg" alt="Hračka 3">
+            <h3>Auto na ovládání-999;</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
     </div>
 
-    <div class="kontakty">
+    <a href="pro kluky.html">
+        <button style="position:relative; left:890px; font-size:20px">zobrazit více</button>
+    </a>
+
+    <h2 id="text">PRO HOLKY</h2>
+    <div class="produkty">
+        <div class="produkt-box" data-price="899">
+            <img src="obrazky/panenka.jpg" alt="899;">
+            <h3>Panenka-299;</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
+        <div class="produkt-box" data-price="1499">
+            <img src="obrazky/luk.jpg" alt="Hračka 2">
+            <h3>NERF zbraň-1499;</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
+        <div class="produkt-box" data-price="899">
+            <img src="obrazky/lego.jpeg" alt="Hračka 3">
+            <h3>Lego friends-899;</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
+    </div>
+
+    <a href="pro holky.html">
+        <button style="position:relative; left:890px; font-size:20px">zobrazit více</button>
+    </a>
+
+    <h2 id="text">POKÉMON KARTY</h2>
+    <div class="produkty">
+        <div class="produkt-box" data-price="119">
+            <img src="obrazky/Surging sparks.jpg" alt="Hračka 1">
+            <h3>Pokémon TCG: Surging Sparks Booster Pack-119-</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
+        <div class="produkt-box" data-price="119">
+            <img src="obrazky/Journey together.jpg" alt="Hračka 2">
+            <h3>Pokémon TCG: Journey Together Booster Pack-119-</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
+        <div class="produkt-box" data-price="119">
+            <img src="obrazky/Stellar crown.jpg" alt="Hračka 3">
+            <h3>Pokémon TCG: Stellar Crown Booster Pack-119-</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
+    </div>
+
+    <a href="pokemon.html">
+        <button style="position:relative; left:890px; font-size:20px">zobrazit více</button>
+    </a>
+
+    <h2 id="text">NEJPRODÁVANĚJŠÍ HRAČKY</h2>
+    <div class="produkty">
+        <div class="produkt-box" data-price="749">
+            <img src="obrazky/pokemon box.jpg" alt="Hračka 4;">    
+            <h3>Malý pokemon box-749-</h3>   
+            <button class="kosik-btn">Do košíku</button>       
+        </div>   
+        <div class="produkt-box" data-price="2499">
+            <img src="obrazky/box 2.jpg" alt="Hračka 5">    
+            <h3>Velký pokemon box-2499-</h3>   
+            <button class="kosik-btn">Do košíku</button>       
+        </div>   
+        <div class="produkt-box" data-price="499">
+            <img src="obrazky/panda.jpg" alt="Hračka 6;">    
+            <h3>Minecraft Panda-499-</h3>   
+            <button class="kosik-btn">Do košíku</button>       
+        </div>   
+    </div>
+
+    <a href="trend.html">
+        <button style="position:relative; left:890px; font-size:20px">zobrazit více</button>
+    </a>
+
+    <h2 id="text">AKCE</h2>
+    <div class="produkty">
+        <div class="produkt-box">
+            <img src="obrazky/Deadpool.jpeg" alt="Hračka 1">
+            <h3>akční figurka Deadpool-1999- -25%</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
+        <div class="produkt-box" data-price="599">
+            <img src="obrazky/Krteček.png" alt="Hračka 2">
+            <h3>plyšová hračka Krteček-599- -20%</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
+        <div class="produkt-box" data-price="399">
+            <img src="obrazky/Myšpulín.jpeg" alt="Hračka 3">
+            <h3>plyšová hračka Myšpulín-399- -30%</h3>
+            <button class="kosik-btn">Do košíku</button>
+        </div>
+    </div>
+
+    <a href="akce.html">
+        <button style="position:relative; left:890px; font-size:20px">zobrazit více</button>
+    </a>
+
+    <div class="kontakty" style="background-color:rgb(125, 194, 228);">
         <a href="kontakty.html" style="text-decoration:none">
             <h2 id="kontakty">kontakty</h2>
         </a>
     </div>
+
+   
 </body>

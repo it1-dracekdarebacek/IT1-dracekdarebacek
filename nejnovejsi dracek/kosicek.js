@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function addToCart(product) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    // pokud product existuje, zvyseni kvantitu
+    // pokud produkt existuje, zvysit kvantitu
     const existing = cart.find(item => item.name === product.name);
     if (existing) {
         existing.quantity += 1;
